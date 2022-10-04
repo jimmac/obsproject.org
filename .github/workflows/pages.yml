@@ -42,9 +42,6 @@ jobs:
             --target x86_64-unknown-linux-gnu \
             --tag v0.15.0
           export PATH="$PATH:~/.cargo/bin"
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v2
       - name: Build with Cobalt
         # Outputs to the './_site' directory by default
         run: cobalt build
