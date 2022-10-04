@@ -33,15 +33,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Cobalt
-        run:
-        - curl -LSfs https://japaric.github.io/trust/install.sh |
-          sh -s --
-          --git cobalt-org/cobalt.rs
-          --crate cobalt
-          --force
-          --target x86_64-unknown-linux-gnu
-          --tag v0.15.0
-        - export PATH="$PATH:~/.cargo/bin"
+        run: |
+          curl -LSfs https://japaric.github.io/trust/install.sh \
+            sh -s -- \
+            --git cobalt-org/cobalt.rs \
+            --crate cobalt \
+            --force \
+            --target x86_64-unknown-linux-gnu \
+            --tag v0.15.0
+          export PATH="$PATH:~/.cargo/bin"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
