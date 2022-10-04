@@ -1,0 +1,7 @@
+
+site:
+  title: OBS
+  description: Open Broadcaster Software
+  base_url: http://obs.org
+posts:
+  rss: rss.xml
