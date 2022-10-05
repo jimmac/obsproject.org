@@ -239,7 +239,7 @@ img {
 nav.menu {
   line-height: 1em;
   grid-area: nav;
-  padding: 20px 0;
+  margin-top: 10px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
