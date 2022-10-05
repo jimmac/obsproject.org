@@ -1,7 +1,11 @@
 
 site:
   title: OBS
-  description: Open Broadcaster Software
-  base_url: http://obs.org
+  description: "Personal Broadcasting System with support for major streaming services."
+  data:
+    url: "https://jimmac.github.io" # the base hostname & protocol for your site
+    sourceurl: "https://github.com/jimmac/obsproject.org"
+    issuesurl: "https://github.com/jimmac/obsproject.org/issues"
+  base_url: /obsproject.org
 posts:
   rss: rss.xml
