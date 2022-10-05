@@ -1,9 +1,6 @@
 ---
-layout: default.liquid
+layout: landing.liquid
 title: OBS
-data: {
-splash: "landing.html"
-}
 ---
 
 # Test

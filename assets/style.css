@@ -67,15 +67,6 @@ OBS
   src: url("fonts/Inter.var.woff2?v=3.19") format("woff2");
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: oblique 0deg 10deg;
-  src: url("fonts/Montserrat.var.woff2") format("woff2");
-}
-
-
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -100,7 +91,6 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--fedora-blue1);
-  font-family: Montserrat;
   margin: 3rem 0 1rem;
   font-weight: 600;
   line-height: 1.25;
@@ -110,15 +100,22 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.5rem;
   font-weight: 100;
-  font-style: normal;
   margin: 3rem 0 1rem;
+  font-weight: 800;
+  font-variation-settings: "wght" 800; /* needed for webkit */
 }
-
-@media screen and (min-width: 650px) {
-  h1 {
-    font-size: 1.6rem;
+  .splash h1 {
+    font-size: 200%;
+    color: #888;
+    mix-blend-mode: color-burn;
   }
-}
+
+  @media screen and (min-width: 650px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+  }
+  
 h2 {
   font-size: 1.2rem;
 }
@@ -180,6 +177,22 @@ img {
 }
 
 /* Singletons */
+
+.splash {
+  display: block;
+  width: 100vw;
+  height: 30vh;
+  background-image: var(--gradient1);
+  background-size: 300%;
+  background-position: left;
+  animation: splashanim 20s infinite alternate;
+}
+
+  @keyframes splashanim {
+    0% { background-position: left; }
+    100% { background-position: right; }
+  }
+
 #logo {
   display: block;
   width: 160px; height: 34px;

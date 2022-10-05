@@ -2,12 +2,7 @@
 <html>
     {% include head.html %}
     <body>
-      {% if page.data.splash %}
-        {% include splash.html %}
-        {% include header.html %}
-      {% else %}
-        {% include header.html %}
-      {% endif%}
+      {% include header.html %}
 
       <div class="container">
         {{ page.content }}
