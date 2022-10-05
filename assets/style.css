@@ -237,6 +237,7 @@ img {
 
 nav {
   grid-area: nav;
+  padding: 20px 0;
 }
 
 .downloads {
