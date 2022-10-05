@@ -181,7 +181,7 @@ img {
 .splash {
   display: block;
   width: 100vw;
-  height: auto;
+  
   position: relative;
   overflow-x: hidden;
 }
@@ -200,6 +200,7 @@ img {
 
 .splash>.container {
   display: grid;
+  grid-gap: 2rem;
   grid-template-columns: 1fr;
   grid-template-rows: 4rem auto;
   grid-template-areas:
@@ -235,10 +236,28 @@ img {
     .splash img.graphic { max-width: 300%; }
   }
 
-nav {
+nav.menu {
+  line-height: 1em;
   grid-area: nav;
   padding: 20px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  
 }
+  .splash nav.menu a { color: var(--light1); }
+  nav.menu ul {
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  nav.menu li {
+    display: block;
+    list-style: none;
+  }
+  
 
 .downloads {
   text-align: center;
@@ -246,18 +265,9 @@ nav {
 
 #logo {
   display: block;
-  width: 160px; height: 34px;
   background: url('assets/page-logo.svg') no-repeat center;
-  padding: 5rem 0 3rem;
-  margin: 0 auto;
-  position: relative;
-  background-size: contain;
 }
   #logo a {
-    display: block;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    color: rgba(0,0,0,0); /* make text transparent */
     cursor: pointer;
   }
 .page-logo > img {

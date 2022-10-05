@@ -1,7 +1,37 @@
 - name: Download 
-  url: download
+  url: /download
   topbar: true
 - name: Blog 
-  url: download
+  url: /blog
   topbar: true
+- name: Help
+  url: /help
+  topbar: true
+- name: Forum
+  url: https://obsproject.com/forum/
+  topbar: true
+- name: Ideas
+  url: https://ideas.obsproject.com/
+  topbar: false
+- name: Privacy Policy
+  url: /privacy-policy
+  topbar: false
+- name: Source on GitHub
+  url: https://github.com/obsproject/obs-studio
+  topbar: false
+- name: Contributions
+  url: /contribute
+  topbar: false
+- name: Support on OpenCollective
+  url: https://opencollective.com/obsproject
+  topbar: false
+- name: Support on Patreon
+  url: https://www.patreon.com/obsproject/overview
+  topbar: false
+- name: Discord
+  url: https://obsproject.com/discord
+  topbar: false
+- name: Wiki
+  url: https://obsproject.com/wiki
+  topbar: false
 
