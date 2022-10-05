@@ -13,3 +13,6 @@ pages:
     permalink: /{{parent}}/{{name}}/
 posts:
   rss: rss.xml
+  jsonfeed: feed.json
+  default:
+    layout: post.liquid

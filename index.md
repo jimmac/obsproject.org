@@ -20,7 +20,7 @@ FIXME: nice cards
 
 # Sponsors
 
-FIXME: stencil logos
+The OBS Project is made possible thanks to generous contributions from our sponsors and backers. Learn more about how you can [become a sponsor](contribute).
 
 # Extend 
 
