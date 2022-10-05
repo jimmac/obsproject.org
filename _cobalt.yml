@@ -6,7 +6,7 @@ site:
     url: "https://jimmac.github.io" # the base hostname & protocol for your site
     sourceurl: "https://github.com/jimmac/obsproject.org"
     issuesurl: "https://github.com/jimmac/obsproject.org/issues"
-  base_url: /obsproject.org
+  base_url: https://jimmac.github.io/obsproject.org
 pages:
   default:
     layout: default.liquid
