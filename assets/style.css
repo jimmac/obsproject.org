@@ -104,10 +104,11 @@ h1 {
   font-weight: 800;
   font-variation-settings: "wght" 800; /* needed for webkit */
 }
-  .splash h1 {
+  .splash h1.title {
     font-size: 200%;
     color: #888;
     mix-blend-mode: color-burn;
+    grid-area: title;
   }
 
   @media screen and (min-width: 650px) {
@@ -181,17 +182,60 @@ img {
 .splash {
   display: block;
   width: 100vw;
-  height: 30vh;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.splash .background {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0; bottom: 0; left: 0; right: 0;
   background-image: var(--gradient1);
   background-size: 300%;
   background-position: left;
   animation: splashanim 20s infinite alternate;
+  clip-path: polygon(0 0, 100% 0, 100% 51%, 0% 100%);
+}
+
+.splash>.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem auto;
+  grid-template-areas:
+  "nav"
+  "title"
+  "graphic";
+  align-items: center;
 }
 
   @keyframes splashanim {
     0% { background-position: left; }
     100% { background-position: right; }
   }
+
+  .splash img.graphic {
+    grid-area: graphic;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .splash>.container {
+      grid-template-columns: repeat(3,1fr);
+      grid-template-areas:
+      "nav nav nav"
+      "title title graphic";
+    }
+    
+    .splash img.graphic { max-width: 300%; }
+  }
+
+nav {
+  grid-area: nav;
+}
+
+
 
 #logo {
   display: block;
