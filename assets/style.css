@@ -104,11 +104,10 @@ h1 {
   font-weight: 800;
   font-variation-settings: "wght" 800; /* needed for webkit */
 }
-  .splash h1.title {
+  .splash .title h1 {
     font-size: 200%;
     color: #888;
     mix-blend-mode: color-burn;
-    grid-area: title;
   }
 
   @media screen and (min-width: 650px) {
@@ -215,6 +214,11 @@ img {
     100% { background-position: right; }
   }
 
+  .splash .title {
+    grid-area: title;
+    color: var(--light1);
+  }
+  
   .splash img.graphic {
     grid-area: graphic;
     max-width: 100%;
@@ -235,7 +239,9 @@ nav {
   grid-area: nav;
 }
 
-
+.downloads {
+  text-align: center;
+}
 
 #logo {
   display: block;
@@ -563,11 +569,17 @@ code.highlighter-rouge {
   text-decoration: none;
 }
 
-.btn.download:hover,.btn.download:focus  { 
-  transform: scale(1.05);
-  background-color: var(--fedora-blue1);
-}
-.btn.download:active { transform: scale(0.95); }
+  .btn.download:hover,.btn.download:focus  { 
+    transform: scale(1.05);
+    background-color: var(--fedora-blue1);
+  }
+  .btn.download:active { transform: scale(0.95); }
+
+  .downloads .btn.download {
+    display: inline-block;
+    margin: 8px;
+    min-width: 8rem;
+  }
 
 .btn {
   font-weight: 800;

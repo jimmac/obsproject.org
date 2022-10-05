@@ -7,5 +7,9 @@ site:
     sourceurl: "https://github.com/jimmac/obsproject.org"
     issuesurl: "https://github.com/jimmac/obsproject.org/issues"
   base_url: /obsproject.org
+pages:
+  default:
+    layout: default.liquid
+    permalink: /{{parent}}/{{name}}/
 posts:
   rss: rss.xml

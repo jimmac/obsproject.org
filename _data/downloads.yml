@@ -1,0 +1,13 @@
+- platform: Windows
+  url: https://cdn-fastly.obsproject.com/downloads/OBS-Studio-28.0.3-Full-Installer-x64.exe
+  version: 28.0.3
+  date: 2022-10-01
+- platform: Macos
+  url: https://cdn-fastly.obsproject.com/downloads/obs-studio-28.0.3-macos-arm64.dmg
+  version: 28.0.3
+  date: 2022-10-01
+- platform: Linux 
+  url: https://flathub.org/apps/details/com.obsproject.Studio
+  version: 28.0.3
+  date: 2022-10-01
+
