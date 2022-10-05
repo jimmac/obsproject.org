@@ -54,6 +54,7 @@ OBS
   --fedora-blue2: rgb(60,110,180);
   --primary-color: var(--fedora-blue2); /* Set your project color */
   --borders: var(--light3);
+  --gradient1: linear-gradient(45deg, var(--blue3), var(--purple3), var(--red3), var(--yellow3));
 }
 
 /* Typography */
