@@ -1,5 +1,5 @@
 ---
-layout: default.liquid
+layout: landing.liquid
 title: OBS
 ---
 
